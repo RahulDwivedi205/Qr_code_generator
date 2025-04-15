@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237, 244, 248);
+}
+
+header {
+    height: 70px;
+}
+
+header .company {
+    color: rgb(75, 65, 180);
+    margin: 30px 0 0 40px;
+    font-size: 40px;
+}
+
+hr {
+    border: 1px solid rgb(236, 232, 232);
+}
+
+.Main {
+    margin-top: 0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 246, 246);
+}
+
+.head {
+    margin-top: 0;
+    height: 200px;
+    width: 100%;
+}
+
+.head .title {
+    font-size: 60px;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.title span {
+    color: rgb(23, 61, 214);
+}
+
+.QR {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(246, 251, 252);
+    width: 100%;
+    margin: 0;
+    box-shadow: 10px 10px 5px transparent;
+    border-radius: 10px;
+}
+
+.QR-box {
+    margin: 0;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 10px 10px 1px hsla(0, 0%, 0%, 0.1);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.QR-box p {
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 30px 0 0;
+    font-weight: bold;
+}
+
+.QR-box input {
+    height: 35px;
+    width: 400px;
+    border-radius: 8px;
+    margin: 20px 0 0 0;
+    padding: 10px;
+}
+
+.QR-box #qrImg {
+    margin: 20px 0 0 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+#qrImg .showimg {
+    max-height: 30px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+.QR-box #image {
+    width: 200px;
+}
+
+.QR-box .tap {
+    width: 250px;
+    height: 45px;
+    border-radius: 8px;
+    margin: 20px 0 0 0;
+    color: white;
+    background-color: rgb(24, 60, 212);
+}
+
+.QR-box i {
+    background-color: rgb(24, 60, 212);
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Optional media query (still commented out)
+@media only screen and (max-width: 608px) {
+    .QR-box {
+        max-width: 90%;
+    }
+    .i {
+        grid-area: 2 / span 1;
+    }
+    #qrText {
+
+    }
+    .item4 {
+        grid-area: 2 / span 1;
+    }
+    .item5 {
+        grid-area: 3 / span 6;
+    }
+}
+*/
